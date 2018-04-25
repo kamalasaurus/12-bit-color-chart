@@ -36,3 +36,6 @@ blue) how exactly is the prism accommodating for this physical reality?
 Wouldn't it just generate 3 sub-spread images for each pixel?  One for
 each color channel?
 
+![circle](./circle.png)
+![square](./square.png)
+
