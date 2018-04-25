@@ -61,7 +61,7 @@ void function() {
       return hslToRgb(hue, 1, 0.5);
     });
 
-  const render = () => {
+  const renderCircle = () => {
     const size = 700;
 
     const rOuter = size / 2;
@@ -102,7 +102,30 @@ void function() {
     document.body.appendChild(svg);
   };
 
-  render();
+  const renderSquare = () => {
+
+    const container = document.createElement('div');
+      container.style.width = '1088px';
+      container.style.margin = '20px';
+
+    with (Math) {
+      colorArray.forEach((color) => {
+        const swatch = document.createElement('div');
+          swatch.style.display = 'inline-block';
+          swatch.style.width = '15px';
+          swatch.style.height = '15px';
+          swatch.style.margin = '1px';
+          swatch.style.backgroundColor = toHex(color);
+
+        container.appendChild(swatch);
+      });
+    }
+
+    document.body.appendChild(container);
+  }
+
+  renderCircle();
+  renderSquare();
 
   window.getColorArray = () => {
     return JSON.stringify(colorArray);
