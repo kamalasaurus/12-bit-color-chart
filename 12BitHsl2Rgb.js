@@ -105,15 +105,15 @@ void function() {
   const renderSquare = () => {
 
     const container = document.createElement('div');
-      container.style.width = '1088px';
+      container.style.width = '704px';
       container.style.margin = '20px';
 
     with (Math) {
       colorArray.forEach((color) => {
         const swatch = document.createElement('div');
           swatch.style.display = 'inline-block';
-          swatch.style.width = '15px';
-          swatch.style.height = '15px';
+          swatch.style.width = '10px';
+          swatch.style.height = '10px';
           swatch.style.margin = '1px';
           swatch.style.backgroundColor = toHex(color);
 

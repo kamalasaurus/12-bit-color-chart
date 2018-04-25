@@ -17,3 +17,22 @@ Maybe I could have just made it a 64 x 64 grid of squares though 🤔
 
 Actually, I'll do that real quick.  It should be easier to reason about.
 
+...
+
+Okay, that was quick.  Anyway, `processingArrays.txt` will have the
+color codes in sequence order and processing syntax.
+
+I've attached images of the charts below for convenience.
+
+## Question
+
+So the glasses work with prisms right?  Physically, there are only 3
+color sub-pixels (R, G, B), that vary in brightness per pixel.  This
+exploits the fact that humans have 3 cones in their eyes, so a
+combination of red and blue light will excite our eyes with a similar
+pattern as violet light (which is much higer in frequency than blue).
+So, considering there's no light at the violet frequency (only red and
+blue) how exactly is the prism accommodating for this physical reality?
+Wouldn't it just generate 3 sub-spread images for each pixel?  One for
+each color channel?
+
